@@ -1,5 +1,5 @@
 package com.gromovyi.dao;
 
-public class UserDao {
+public interface UserDao {
 
 }

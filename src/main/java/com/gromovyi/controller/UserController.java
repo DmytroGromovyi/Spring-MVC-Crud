@@ -1,5 +1,7 @@
 package com.gromovyi.controller;
 
+import static com.gromovyi.constraints.TemplateNameConstratints.HELLO_PAGE;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -7,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class UserController {
     @RequestMapping("/hello")
-    public String getHomePage(){
-      return "index";
+    public String getHelloPage(){
+      return HELLO_PAGE;
     }
 }
